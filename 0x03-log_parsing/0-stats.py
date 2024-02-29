@@ -29,7 +29,7 @@ def extract_input(input_line):
 
 def print_statistics(total_file_size, status_codes_stats):
     """ This function prints the accumulated statistics
-    of the HTTP request log""".
+    of the HTTP request log"""
     print('File size: {:d}'.format(total_file_size), flush=True)
     for status_code in sorted(status_codes_stats.keys()):
         num = status_codes_stats.get(status_code, 0)
