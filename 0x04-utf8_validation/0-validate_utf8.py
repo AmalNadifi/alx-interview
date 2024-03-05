@@ -25,7 +25,7 @@ def validUTF8(data):
             elif (byte >> 3) == 0b11110:
                 num_bytes = 3
             elif (byte >> 7) != 0:
-                # If the most significant bit is set, it's not a valid start byte
+                # If most significant bit is set, it's not a valid start byte
                 return False
         else:
             # If this byte is not a continuation byte
