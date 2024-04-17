@@ -3,6 +3,7 @@
 which determines the winner in the Prime Game problem
 """
 
+
 def is_prime(n):
     """This function checks if a number is prime
     Args:
@@ -16,6 +17,7 @@ def is_prime(n):
             for multiple in range(numb, n + 1, numb):
                 is_prime[multiple] = False
     return prime_numbers
+
 
 def isWinner(x, nums):
     """
