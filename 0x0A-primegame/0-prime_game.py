@@ -39,7 +39,7 @@ def isWinner(x, nums):
 
     # Iterate through each round
     for n in nums:
-        prime = is_prime(n)
+        prime = is_prime(nums[n])
         if len(prime) % 2 == 0:
             ben_wins += 1
         else:
