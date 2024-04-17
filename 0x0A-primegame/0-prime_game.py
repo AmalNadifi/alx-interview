@@ -38,7 +38,7 @@ def isWinner(x, nums):
     ben_wins = 0
 
     # Iterate through each round
-    for n in nums:
+    for n in range(x):
         prime = is_prime(nums[n])
         if len(prime) % 2 == 0:
             ben_wins += 1
